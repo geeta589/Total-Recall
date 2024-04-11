@@ -131,7 +131,7 @@ let myArry1=myArray.pop();    //Remove from the front of an array
 console.log(myArry1);
 console.log(myArry1.reverse());  
 
-//==============H =========
+//==============H. What's in Your Closet=========
 
 const kristynsCloset = [
     "left shoe",
