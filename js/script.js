@@ -107,3 +107,63 @@ else
     console.log("Monkey");
 }
 
+//========III. Arrays & Control flow===
+console.log("C. Accessing elements");
+const randomThings = [1, 10, "Hello", true];
+console.log(randomThings[0]);
+randomThings[2]= "World";
+console.log(randomThings);
+
+//====D. Change values=====
+console.log("D. Change values");
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+console.log(ourClass[3]);
+ourClass[4] = "Octocat";
+ourClass[5] ="Cloud City" ;
+console.log(ourClass);
+
+const myArray = [5, 10, 500, 20];
+myArray[4] ="Aegon";
+myArray.push("Randal");
+console.log(myArray);
+myArray.unshift("Bob Marley");  //add to the front of an array// 
+let myArry1=myArray.pop();    //Remove from the front of an array 
+console.log(myArry1);
+console.log(myArry1.reverse());  
+
+//==============H =========
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+
+  console.log(kristynsCloset);
+
+const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+console.log(thomsCloset);
+
+
