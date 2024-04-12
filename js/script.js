@@ -129,7 +129,7 @@ console.log(myArray);
 myArray.unshift("Bob Marley");  //add to the front of an array// 
 let myArry1=myArray.pop();    //Remove from the front of an array 
 console.log(myArry1);
-console.log(myArry1.reverse());  
+// console.log(myArry1.reverse());  
 
 //==============H. What's in Your Closet=========
 
@@ -167,3 +167,89 @@ const thomsCloset = [
 console.log(thomsCloset);
 
 
+//====== Cat example =========
+
+let myCat = {
+  name : "Caty",
+  age : 5,
+  favoriteThings : ["eating","sleeping","watching"],
+  canSpeakFrench : true,
+  canSolveRubiksCube : false
+};
+
+console.log(myCat.name);
+console.log(myCat.age);
+console.log(myCat.favoriteThings);
+console.log(myCat.canSolveRubiksCube);
+console.log(myCat.canSolveRubiksCube);
+
+// OBJECT
+
+//====== A. Make a user object=====
+
+const User ={
+  Name : "Amy",
+  email : "amy.hockanbery@gmail.com",
+  age : 15,
+  purchased : [],
+};
+console.log(User);
+
+//=====B. Update the user=====
+
+User.email="pashmina.jento@gmail.com";
+User.age++;
+console.log(User);
+
+//====C. Adding keys and values ===
+
+User.location="Pittsburgh";
+console.log(User);
+
+//===D. Shopaholic!====
+
+User.purchased.push("carbohydrates");
+User.purchased.push("peace of mind");
+User.purchased.push("Merino jodhpurs");
+console.log(User);
+console.log(User.purchased[2]);
+
+//====== E. Object-within-object
+const friend = {
+  name: "Grace Hopper",
+  age: 85
+}
+
+User.friend = {
+  name: "Grace Hopper",
+  age: 85
+}
+User.friend.location="Ohio";
+console.log(User);
+
+
+console.log(User.friend.name);
+console.log(User.friend.location);
+console.log(User.friend.age=55);
+
+User.friend.purchased=[];
+User.friend.purchased.push("The One Ring");
+User.friend.purchased.push("A latte");
+
+console.log(User.friend.purchased[1]);
+
+//========= F. Loops ========
+//===Write a for loop that iterates over the User's purchased array (NOT the friend's purchased array), and prints each 
+//element to the console.
+
+console.log("======For loop that iterates over the User's purchased array======");
+for(const userpurchased of User.purchased){
+console.log(userpurchased);
+}
+
+//Write a for loop that iterates over the Friend's purchased array, and prints each element to the console.
+
+console.log("======For loop that iterates over the Friend's purchased array====");
+for(const frndpurchased of User.friend.purchased){
+  console.log(frndpurchased);
+  }
