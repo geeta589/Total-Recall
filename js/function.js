@@ -70,9 +70,15 @@ console.log(a);
 
 //==== H. printLongestWord =======
 
+let arr = [
+    "BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"];
 
-
-
-
-
+function printLongestWord() {
+    return arr.sort(function (a, b) {
+        return b.length - a.length;
+    })[0];
+}
+ 
+// Display output
+console.log(printLongestWord());
 
